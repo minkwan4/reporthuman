@@ -63,7 +63,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
-
+ç
 # Editor-based Rest Client
 .idea/httpRequests
 
@@ -77,3 +77,5 @@ venv/
 db.sqlite3
 
 .idea/
+
+__pycache__/
