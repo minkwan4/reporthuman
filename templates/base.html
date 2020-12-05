@@ -6,11 +6,14 @@
 <body>
     {%include 'header.html' %}
 
-    {%block content %}
-    {%endblock %}
+    <hr>
 
-    <div style="height: 20rem; background-color: #38df81; border-radius: 1rem;
-            margin: 2rem;"></div>
+    {% block content %}
+
+    {% endblock %}
+
+    <hr>
+
     {%include 'footer.html' %}
 </body>
 </html>
