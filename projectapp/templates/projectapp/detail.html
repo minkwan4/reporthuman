@@ -13,7 +13,10 @@
         <h5 style="margin-bottom:3rem;">
             {{ target_project.description }}
         </h5>
+    </div>
 
+    <div>
+        {% include 'snippets/list_reporthuman.html' with article_list=object_list %}
     </div>
 </div>
 

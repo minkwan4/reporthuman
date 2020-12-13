@@ -54,6 +54,8 @@ width: 12rem; border-radius: 20rem; margin-bottom:2rem; object-fit:cover;">
         </a>
         {% endif %}
     </div>
+
+    {% include 'snippets/list_reporthuman.html' with article_list=object_list %}
 </div>
 
 {% endblock %}
