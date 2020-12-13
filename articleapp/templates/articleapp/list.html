@@ -4,14 +4,22 @@
 {% block content %}
 <style>
 
-    .container div {
-      width: 250px;
+    .container {
+        padding: 0;
+        margin: 0, auto;
+    }
 
-      background-color: antiquewhite;
+
+    .container a {
+        width: 40%;
+        max-width: 250px;
+    }
+
+    .container div {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 8px;
+
       border-radius: 1rem;
     }
 
@@ -40,7 +48,7 @@
 
 
   <div style="text-align: center;">
-    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col-3 mt-3 mb-3">
+    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col-3 mt-3 mb-3 px-1">
       Create Article
     </a>
   </div>
