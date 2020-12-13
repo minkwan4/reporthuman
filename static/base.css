@@ -1,3 +1,13 @@
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
 .reporthuman_logo{
     font-family: 'Grandstander', cursive;
 }
@@ -10,13 +20,23 @@
     text-align: center;
     margin-top: 2rem;
 }
+
 .reporthuman_header{
     text-align: center;
-     margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 @media screen and (max-width:500px){
-    html{
-    font-size: 12px;}
+    html {
+    font-size: 12px;
+    }
 }
+
+.reporthuman_header_nav {
+    margin: 0 0.5rem;
+}
+.reporthuman_header_navbar {
+    margin: 1rem 0;
+}
+
 
