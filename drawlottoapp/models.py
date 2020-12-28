@@ -1,9 +1,11 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-# Create your models here.
 
+class LottoNumber(models.Model):
+    text = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now=True, null=True)
 
-class Drawlotto(models.Model):
-    number = models.IntegerField(primary_key=True)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
+    writer = models.ForeignKey(User, on_delete=models.SET_NULL,
+                               related_name='lotto', null=True)
+

@@ -24,6 +24,9 @@
         <a href="{% url 'accountapp:detail' pk=user.pk %}" class="reporthuman_header_nav">
             <span>MyPage</span>
         </a>
+        <a href="{% url 'drawlottoapp:draw_lotto' %}" class="reporthuman_header_nav">
+            <span>lotto</span>
+        </a>
         <a href="{% url 'accountapp:logout' %}?next={{ request.path }}" class="reporthuman_header_nav">
             <span>logout</span>
         </a>

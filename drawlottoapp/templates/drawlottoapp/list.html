@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="text-center">
+
+<!--    <input type="text" readonly="" id="lotto_text" >-->
+    <form action="/drawlottos/draw_lotto/" method="post">
+        {% csrf_token %}
+        <input type="submit" value="로또번호생성" onclick="Lotto()" class="btn btn-dark rounded-pill col-3 mt-3 mb-3 px-1">
+
+    </form>
+    {% if temp_history_list %}
+        {% for draw_lotto in temp_history_list %}
+            <div>
+                {% csrf_token %}
+                {{ draw_lotto.id }}
+                {{ draw_lotto.text }}
+                {{ draw_lotto.writer }}
+                {{ draw_lotto.created_at }}
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+
+
+
+<script type="text/javascript">
+    function Lotto() {
+        var lotto = new Array(6); // 6개의 배열이 lotto에 저장
+        var count = 0; //추출한 로또번호의 갯수
+        var overl = true; // 번호중복 여부 변수
+
+        while (count < 6) { // 로또번호 6번 얻을 때까지 반복.
+            var number = 0; //랜덤번호 가져오는 변수
+            number = parseInt(Math.random() * 45) + 1; // 1~45사이에 랜덤번호 추출
+
+            for (var i = 0; i < count; i++) { // 1부터 i까지 반복하여 중복확인
+                if (lotto[i] == number) { // 중복된 번호가 아니면 넘어가기.
+                    overl = false;
+                }
+            }
+
+            if (overl) { //중복 없을 시 count 1 증가
+                lotto[count] = number; //추출된 번호를 배열에 넣기
+                count++;
+            }
+
+            overl = true; //원래 true으로 돌아가기
+        }
+        var lotto_text = document.getElementById("lotto_text"); //입력폼 id 가져오기
+
+        // 추첨된 로또번호 출력
+        lotto_text.value = lotto[0] + ', ' + lotto[1] + ', ' + lotto[2] + ', ' +
+                lotto[3] + ', ' + lotto[4] + ', ' + lotto[5];
+    }
+</script>
+
+
+<!--출처: https://rlaehdgs12.tistory.com/11 [쥐똥박사 개발자]-->
+
+{% endblock %}
