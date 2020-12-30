@@ -5,6 +5,7 @@ WORKDIR /home/
 RUN echo "testing1234"
 RUN echo "testing1234"
 RUN echo "testing1234"
+RUN echo "testing1234"
 
 
 RUN git clone https://github.com/minkwan4/reporthuman.git

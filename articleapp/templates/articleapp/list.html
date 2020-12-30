@@ -34,10 +34,13 @@
         {% for article in article_list %}
         <a href="{% url 'articleapp:detail' pk=article.pk %}">
           {% include 'snippets/card.html' with article=article %}
-          {{ article.title }}
-          {{ article.writer }}
-          {{ article.created_at }}
+          글제목 : {{ article.title }}
+          글쓴이 : {{ article.writer }}
+          닉네임 : {{ article.writer.profile.nickname }}
+          생성날짜 : {{ article.created_at }}
         </a>
+
+
         {% endfor %}
       </div>
       <script src="{% static 'js/magicgrid.js' %}"></script>
