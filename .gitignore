@@ -82,8 +82,3 @@ __pycache__/
 /db_backup.sqlite3
 
 media/
-
-/.build
-
-**/*.pyc
-*-env/

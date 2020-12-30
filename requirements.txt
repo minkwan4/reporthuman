@@ -10,4 +10,3 @@ Pillow==8.0.1
 pytz==2020.4
 soupsieve==2.0.1
 sqlparse==0.4.1
-Cactus==3.3.3
