@@ -8,15 +8,15 @@
 <!--    <input type="text" readonly="" id="lotto_text" >-->
     <form action="/drawlottos/draw_lotto/" method="post">
         {% csrf_token %}
-        <input type="submit" value="로또번호생성" onclick="Lotto()" class="btn btn-dark rounded-pill col-3 mt-3 mb-3 px-1">
+        <input type="submit" value="로또번호생성" onclick="" class="btn btn-dark rounded-pill col-3 mt-3 mb-3 px-1">
 
     </form>
     {% if temp_history_list %}
         {% for draw_lotto in temp_history_list %}
-            <div class="text-center ml-5 mt-1 mb-1 px-1">
+            <div class="text-center mt-1 mb-1 px-1">
                 {% csrf_token %}
 <!--                {{ draw_lotto.lottocount }} 회-->
-                {{ draw_lotto.game }}
+<!--                {{ draw_lotto.game }}-->
                 {{ draw_lotto.writer }}
 <!--                총 뽑기 횟수 : {{ draw_lotto.charpoint }} 회-->
             </div>

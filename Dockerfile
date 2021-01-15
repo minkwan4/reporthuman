@@ -13,6 +13,7 @@ RUN echo "update.21.1/15:fix1"
 RUN echo "update.21.1/15:fix2"
 RUN echo "update.21.1/15:fix3"
 RUN echo "update.21.1/15:fix4"
+RUN echo "update.21.1/15:fix5"
 
 WORKDIR /home/reporthuman/
 
