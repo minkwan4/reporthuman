@@ -9,6 +9,7 @@ RUN echo "update.20.12/30:points"
 RUN git clone https://github.com/minkwan4/reporthuman.git
 
 RUN echo "update.21.1/15:points"
+RUN echo "update.21.1/15:fix1"
 
 WORKDIR /home/reporthuman/
 
