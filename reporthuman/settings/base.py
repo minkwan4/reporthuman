@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'subscribeapp',
 
     'drawlottoapp',
-    'polls.apps.PollsConfig',
 ]
 
 MIDDLEWARE = [
