@@ -16,8 +16,8 @@ def draw_lotto(request):
     if request.method == "POST":
         new_temp = LottoNumber()
 
-        # temp = sample(range(1, 46), 6)
-        # new_temp.game = sorted(temp)
+        # 살릴꺼 temp = sample(range(1, 46), 6)
+        # 살릴꺼 new_temp.game = sorted(temp)
         new_temp.writer = request.user
 
         # 살릴꺼 requestime = timezone.now()
