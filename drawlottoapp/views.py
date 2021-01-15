@@ -15,8 +15,8 @@ from random import *
 def draw_lotto(request):
     if request.method == "POST":
         new_temp = LottoNumber()
-        temp = sample(range(1, 46), 6)
 
+        temp = sample(range(1, 46), 6)
         new_temp.game = sorted(temp)
         new_temp.writer = request.user
 
