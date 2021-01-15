@@ -10,6 +10,9 @@ RUN git clone https://github.com/minkwan4/reporthuman.git
 
 RUN echo "update.21.1/15:points"
 RUN echo "update.21.1/15:fix1"
+RUN echo "update.21.1/15:fix2"
+RUN echo "update.21.1/15:fix3"
+RUN echo "update.21.1/15:fix4"
 
 WORKDIR /home/reporthuman/
 

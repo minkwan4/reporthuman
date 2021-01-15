@@ -11,7 +11,7 @@ def read_secret(secret_name):
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
+    DEBUG=(bool, True)
 )
 
 # reading .env file

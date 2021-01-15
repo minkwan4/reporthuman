@@ -15,12 +15,10 @@
         {% for draw_lotto in temp_history_list %}
             <div class="text-center ml-5 mt-1 mb-1 px-1">
                 {% csrf_token %}
-                {{ draw_lotto.lottocount }} 회
+<!--                {{ draw_lotto.lottocount }} 회-->
                 {{ draw_lotto.game }}
                 {{ draw_lotto.writer }}
-                총 뽑기 횟수 : {{ draw_lotto.charpoint }} 회
-
-
+<!--                총 뽑기 횟수 : {{ draw_lotto.charpoint }} 회-->
             </div>
         {% endfor %}
     {% endif %}

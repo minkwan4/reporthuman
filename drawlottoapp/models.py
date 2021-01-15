@@ -4,7 +4,7 @@ from django.db import models
 
 class LottoNumber(models.Model):
     id = models.IntegerField(primary_key=True)
-    text = models.CharField(max_length=255)
+    text = models.CharField(max_length=255, null=True)
     created_at = models.DateTimeField(auto_now=True, null=True)
 
     writer = models.ForeignKey(User, on_delete=models.SET_NULL,
