@@ -17,6 +17,8 @@ RUN echo "update.21.1/15:fix8"
 RUN echo "update.21.1/15:fix9"
 RUN echo "update.21.1/15:fix10"
 RUN echo "update.21.1/15:fix11"
+RUN echo "update.21.1/15:fix12"
+RUN echo "update.21.1/15:fix13"
 
 
 RUN git clone https://github.com/minkwan4/reporthuman.git
