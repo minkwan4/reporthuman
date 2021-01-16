@@ -14,7 +14,7 @@ class LottoNumber(models.Model):
 
     game = models.CharField(max_length=255, null=True)
 
-    charpoint = models.IntegerField(null=True)
+    charpoint = models.IntegerField(null=True, default=1)
     charpoint_instance = models.IntegerField(null=True, default=2)
 
     test = models.CharField(max_length=255, null=True)
