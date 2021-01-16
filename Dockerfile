@@ -5,9 +5,6 @@ WORKDIR /home/
 RUN echo "update.20.12/25:lottoapp"
 RUN echo "update.20.12/30:points"
 
-
-RUN git clone https://github.com/minkwan4/reporthuman.git
-
 RUN echo "update.21.1/15:points"
 RUN echo "update.21.1/15:fix1"
 RUN echo "update.21.1/15:fix2"
@@ -17,6 +14,13 @@ RUN echo "update.21.1/15:fix5"
 RUN echo "update.21.1/15:fix6"
 RUN echo "update.21.1/15:fix7"
 RUN echo "update.21.1/15:fix8"
+RUN echo "update.21.1/15:fix9"
+RUN echo "update.21.1/15:fix10"
+
+
+RUN git clone https://github.com/minkwan4/reporthuman.git
+
+
 
 WORKDIR /home/reporthuman/
 
