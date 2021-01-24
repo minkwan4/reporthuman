@@ -24,9 +24,8 @@ class LottoNumber(models.Model):
     test4 = models.CharField(max_length=255, null=True)
 
 
-
 class ResultLotto(models.Model):
-    lottocountresult = models.IntegerField(null=True)
+    lottoresult2 = models.IntegerField(null=True)
     result1 = models.IntegerField(null=True)
     result2 = models.IntegerField(null=True)
     result3 = models.IntegerField(null=True)

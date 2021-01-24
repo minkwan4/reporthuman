@@ -7,6 +7,7 @@ RUN echo "update.20.12/30:points"
 RUN echo "update.21.1/15:points"
 RUN echo "update.21.1/24:defencegame_update_1st"
 RUN echo "update.21.1/24:defencegame_update_1st_fix1"
+RUN echo "update.21.1/24:defencegame_update_1st_fix2"
 
 RUN git clone https://github.com/minkwan4/reporthuman.git
 
