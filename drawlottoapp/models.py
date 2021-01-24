@@ -19,9 +19,9 @@ class LottoNumber(models.Model):
     charpoint_instance = models.IntegerField(null=True, default=2)
 
     test = models.CharField(max_length=255, null=True)
-    test2 = models.CharField(max_length=255, null=True)
-    test3 = models.CharField(max_length=255, null=True)
-    test4 = models.CharField(max_length=255, null=True)
+    # test2 = models.CharField(max_length=255, null=True)
+    # test3 = models.CharField(max_length=255, null=True)
+    # test4 = models.CharField(max_length=255, null=True)
 
 
 # class ResultLotto(models.Model):

@@ -10,6 +10,7 @@ RUN echo "update.21.1/24:defencegame_update_1st_fix1"
 RUN echo "update.21.1/24:defencegame_update_1st_fix2"
 RUN echo "update.21.1/24:defencegame_update_1st_fix3"
 RUN echo "update.21.1/24:defencegame_update_1st_fix4"
+RUN echo "update.21.1/24:defencegame_update_1st_fix5"
 
 RUN git clone https://github.com/minkwan4/reporthuman.git
 
