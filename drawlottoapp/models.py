@@ -25,7 +25,6 @@ class LottoNumber(models.Model):
 
 
 class ResultLotto(models.Model):
-    lottoresult2 = models.IntegerField(null=True)
     result1 = models.IntegerField(null=True)
     result2 = models.IntegerField(null=True)
     result3 = models.IntegerField(null=True)
