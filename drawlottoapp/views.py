@@ -9,7 +9,7 @@ from django.urls import reverse
 from django.utils import timezone
 from django.utils.datetime_safe import datetime
 
-from drawlottoapp.models import LottoNumber, ResultLotto
+from drawlottoapp.models import LottoNumber
 from selenium import webdriver
 
 from random import *
@@ -44,7 +44,7 @@ def draw_lotto(request):
         #     new_temp.test = []
         #
         #     new_temp.test2 = []
-        #     new_temp.test2.append(new_temp2[0]['lottocountresult'])
+        #     new_temp.test2.append(new_temp2[0][''])
         #
         #     new_temp.test3 = []
         #     new_temp.test3.append(new_temp2[0]['result1'])

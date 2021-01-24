@@ -24,14 +24,14 @@ class LottoNumber(models.Model):
     test4 = models.CharField(max_length=255, null=True)
 
 
-class ResultLotto(models.Model):
-    result1 = models.IntegerField(null=True)
-    result2 = models.IntegerField(null=True)
-    result3 = models.IntegerField(null=True)
-    result4 = models.IntegerField(null=True)
-    result5 = models.IntegerField(null=True)
-    result6 = models.IntegerField(null=True)
-    result7 = models.IntegerField(null=True)
+# class ResultLotto(models.Model):
+#     result1 = models.IntegerField(null=True)
+#     result2 = models.IntegerField(null=True)
+#     result3 = models.IntegerField(null=True)
+#     result4 = models.IntegerField(null=True)
+#     result5 = models.IntegerField(null=True)
+#     result6 = models.IntegerField(null=True)
+#     result7 = models.IntegerField(null=True)
 
 
 

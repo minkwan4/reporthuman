@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from drawlottoapp.models import LottoNumber, ResultLotto
+from drawlottoapp.models import LottoNumber
 
 admin.site.register(LottoNumber)
-admin.site.register(ResultLotto)
+# admin.site.register(ResultLotto)
