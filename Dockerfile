@@ -11,6 +11,8 @@ RUN echo "update.21.1/24:defencegame_update_1st_fix2"
 RUN echo "update.21.1/24:defencegame_update_1st_fix3"
 RUN echo "update.21.1/24:defencegame_update_1st_fix4"
 RUN echo "update.21.1/24:defencegame_update_1st_fix5"
+RUN echo "update.21.1/24:defencegame_update_1st_fix6"
+RUN echo "update.21.1/24:defencegame_update_1st_fix7"
 
 RUN git clone https://github.com/minkwan4/reporthuman.git
 
@@ -26,4 +28,4 @@ RUN pip install mysqlclient
 
 EXPOSE 8000
 
-CMD ["bash", "-c", "python manage.py collectstatic --noinput --settings=reporthuman.settings.deploy && python manage.py migrate --settings=reporthuman.settings.deploy && gunicorn reporthuman.wsgi --env DJANGO_SETTINGS_MODULE=reporthuman.settings.deploy --bind 0.0.0.0:8000"]
+CMD ["bash", "-c", "python manage.py collectstatic --noinput --settings=reporthuman.settings.deploy && python manage.py makemigrations --settings=reporthuman.settings.deploy && python manage.py migrate --settings=reporthuman.settings.deploy && gunicorn reporthuman.wsgi --env DJANGO_SETTINGS_MODULE=reporthuman.settings.deploy --bind 0.0.0.0:8000"]
