@@ -12,4 +12,4 @@ class Profile(models.Model):
     nickname = models.CharField(max_length=20, unique=True, null=True)
     message = models.CharField(max_length=100, null=True)
 
-    points = models.IntegerField(default=0)
+    # points = models.IntegerField(default=0)
