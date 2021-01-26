@@ -16,7 +16,6 @@ services:
       - network
     volumes:
       - static-volume:/home/reporthuman/staticfiles
-
       - media-volume:/home/reporthuman/media
     secrets:
       - MYSQL_PASSWORD

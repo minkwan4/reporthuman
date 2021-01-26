@@ -5,7 +5,7 @@ from django.db import models
 
 
 class Profile(models.Model):
-    id = models.IntegerField(primary_key=True)
+    # id = models.IntegerField(primary_key=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
 
     image = models.ImageField(upload_to='profile/', null=True)

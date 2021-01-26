@@ -6,6 +6,7 @@ RUN echo "update.21.1/15:points"
 RUN echo "update.21.1/24:defencegame_update"
 RUN echo "update.21.1/26:defencegame_update"
 RUN echo "update.21.1/26:defencegame_update2"
+RUN echo "update.21.1/26:defencegame_update3"
 
 WORKDIR /home/
 
